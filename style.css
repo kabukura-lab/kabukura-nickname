@@ -1,0 +1,265 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #394052;
+  background: #f8eff2;
+  margin: 0;
+  padding: 20px 12px;
+  font-family: -apple-system, BlinkMacSystemFont, Hiragino Kaku Gothic ProN, sans-serif;
+}
+
+.app {
+  background: #fffaf9;
+  border: 2px solid #f0dce2;
+  border-radius: 28px;
+  max-width: 460px;
+  margin: auto;
+  padding: 25px 20px;
+  box-shadow: 0 10px 30px #cdaab533;
+}
+
+header {
+  text-align: center;
+  border-bottom: 1px solid #f1dfe5;
+  padding-bottom: 20px;
+}
+
+.logo {
+  color: #48516b;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.version {
+  color: #c28b9c;
+  letter-spacing: 2px;
+  margin-top: 8px;
+  font-size: 9px;
+}
+
+.sub {
+  color: #92909b;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.tag {
+  color: #b66f87;
+  letter-spacing: 1px;
+  background: #fceaf0;
+  border-radius: 30px;
+  margin-top: 28px;
+  padding: 9px 14px;
+  font-size: 10px;
+  display: inline-block;
+}
+
+h2 {
+  color: #48516b;
+  margin: 20px 0;
+  font-size: 21px;
+  line-height: 1.6;
+}
+
+.progress-track {
+  background: #f1e5e9;
+  border-radius: 20px;
+  height: 8px;
+  margin-top: 25px;
+  overflow: hidden;
+}
+
+#progressBar {
+  background: linear-gradient(90deg, #e9a9bb, #d6b56e);
+  height: 100%;
+  transition: width .3s;
+}
+
+#progress {
+  color: #b58b99;
+  text-align: right;
+  font-size: 12px;
+}
+
+#question {
+  color: #48516b;
+  margin: 30px 0 20px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.8;
+}
+
+button {
+  color: #685263;
+  cursor: pointer;
+  background: #f9eaf0;
+  border: 1px solid #edcbd6;
+  border-radius: 16px;
+  width: 100%;
+  margin: 12px 0;
+  padding: 17px 12px;
+  font-size: 15px;
+  font-weight: bold;
+  display: block;
+  box-shadow: 0 3px 8px #c99eac20;
+}
+
+button:active {
+  transform: scale(.98);
+}
+
+.again {
+  color: #fff;
+  background: #505a76;
+  border-color: #505a76;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.disclaimer {
+  color: #aaa1a7;
+  margin-top: 25px;
+  font-size: 10px;
+  line-height: 1.8;
+}
+
+.result-label {
+  color: #bd8196;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 11px;
+}
+
+.eyebrow {
+  color: #92909b;
+  text-align: center;
+}
+
+.crown {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 38px;
+}
+
+#nickname {
+  color: #ba7890;
+  text-align: center;
+  overflow-wrap: anywhere;
+  margin: 15px 0;
+  font-size: 29px;
+  line-height: 1.5;
+}
+
+.rank {
+  color: #a96c82;
+  background: #fceaf0;
+  border-radius: 30px;
+  width: fit-content;
+  margin: 0 auto 20px;
+  padding: 9px 16px;
+  font-size: 12px;
+  display: block;
+}
+
+.comment {
+  color: #5c5360;
+  background: #f8edf1;
+  border-left: 4px solid #d99caf;
+  border-radius: 18px;
+  padding: 22px 18px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.scores {
+  background: #f5f0f3;
+  border-radius: 18px;
+  margin: 25px 0;
+  padding: 20px;
+}
+
+.score-title {
+  color: #505a76;
+  margin-bottom: 16px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.score-row {
+  margin: 15px 0;
+  font-size: 12px;
+}
+
+.score-head {
+  justify-content: space-between;
+  margin-bottom: 7px;
+  display: flex;
+}
+
+.bar {
+  background: #e7dce2;
+  border-radius: 20px;
+  height: 8px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  background: linear-gradient(90deg, #e8aabd, #d5b16b);
+  border-radius: 20px;
+  height: 100%;
+}
+
+.share-card {
+  text-align: center;
+  background: linear-gradient(145deg, #fff0f4, #f5edf2);
+  border: 2px solid #e7c3ce;
+  border-radius: 22px;
+  margin: 25px 0;
+  padding: 25px 16px;
+}
+
+.share-brand {
+  color: #505a76;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.share-small {
+  color: #b58b99;
+  letter-spacing: 2px;
+  margin-top: 25px;
+  font-size: 10px;
+}
+
+.share-name {
+  color: #b66f87;
+  overflow-wrap: anywhere;
+  margin: 20px 0;
+  font-size: 27px;
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+.share-comment {
+  color: #5c5360;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.share-footer {
+  color: #a78c99;
+  margin-top: 25px;
+  font-size: 10px;
+}
+
+footer {
+  text-align: center;
+  color: #b9a6af;
+  margin: 25px 0 5px;
+  font-size: 10px;
+}

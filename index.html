@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>株クラあだ名工場</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div class="app">
+  <header>
+    <div class="logo">📈 株クラあだ名工場</div>
+    <div class="version">THE INVESTOR ROAST MACHINE / 2.0</div>
+    <p class="sub">あなたの投資人生に、勝手に名前をつけます。</p>
+  </header>
+
+  <section id="quiz">
+    <div class="tag">INVESTOR PERSONALITY TEST</div>
+    <h2>あなたの投資家としての本性を暴きます。</h2>
+
+    <div class="progress-track">
+      <div id="progressBar"></div>
+    </div>
+
+    <p id="progress"></p>
+    <p id="question"></p>
+    <div id="answers"></div>
+
+    <p class="disclaimer">
+      ※完全ネタ診断です。投資判断には使用しないでください。
+    </p>
+  </section>
+
+  <section id="result" class="hidden">
+    <div class="result-label">YOUR INVESTOR NICKNAME</div>
+    <p class="eyebrow">あなたに贈る称号は……</p>
+    <div class="crown">👑</div>
+    <h1 id="nickname"></h1>
+    <div class="rank" id="rank"></div>
+    <div class="comment" id="comment"></div>
+
+    <div class="scores">
+      <div class="score-title">あなたの投資家パラメーター</div>
+      <div id="scoreList"></div>
+    </div>
+
+    <div class="share-card" id="shareCard">
+      <div class="share-brand">📈 株クラあだ名工場</div>
+      <div class="share-small">MY INVESTOR NICKNAME</div>
+      <div class="share-name" id="cardName"></div>
+      <div class="share-comment" id="cardComment"></div>
+      <div class="share-footer">
+        あなたの投資人生に、勝手に名前を。
+      </div>
+    </div>
+
+    <button onclick="downloadCard()">📸 結果画像を保存</button>
+    <button onclick="shareX()">𝕏 Xで結果をシェア</button>
+    <button class="again" onclick="restart()">もう一度診断する</button>
+
+    <p class="disclaimer">
+      ※娯楽目的の診断です。実際の投資能力を評価するものではありません。
+    </p>
+  </section>
+
+  <footer>株クラあだ名工場 © 2026</footer>
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>
