@@ -1,119 +1,123 @@
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  color: #394052;
-  background: #f8eff2;
   margin: 0;
   padding: 20px 12px;
-  font-family: -apple-system, BlinkMacSystemFont, Hiragino Kaku Gothic ProN, sans-serif;
+  background: #f8eff2;
+  color: #505a76;
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
 }
 
 .app {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 32px 24px;
   background: #fffaf9;
-  border: 2px solid #f0dce2;
-  border-radius: 28px;
-  max-width: 460px;
-  margin: auto;
-  padding: 25px 20px;
-  box-shadow: 0 10px 30px #cdaab533;
+  border: 2px solid #f0dce3;
+  border-radius: 32px;
+  box-shadow: 0 12px 35px rgba(130, 85, 105, 0.08);
 }
 
 header {
   text-align: center;
-  border-bottom: 1px solid #f1dfe5;
-  padding-bottom: 20px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid #eadde2;
 }
 
 .logo {
-  color: #48516b;
-  font-size: 25px;
-  font-weight: 900;
+  font-size: 27px;
+  font-weight: 800;
+  color: #505a76;
 }
 
 .version {
-  color: #c28b9c;
-  letter-spacing: 2px;
-  margin-top: 8px;
-  font-size: 9px;
+  margin-top: 10px;
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: #b58b99;
 }
 
 .sub {
-  color: #92909b;
-  font-size: 13px;
-  line-height: 1.8;
+  margin-top: 24px;
+  color: #99909a;
+  font-size: 14px;
 }
 
-.tag {
-  color: #b66f87;
-  letter-spacing: 1px;
-  background: #fceaf0;
-  border-radius: 30px;
-  margin-top: 28px;
-  padding: 9px 14px;
-  font-size: 10px;
+main {
+  padding-top: 28px;
+}
+
+.tag,
+.result-label {
   display: inline-block;
+  padding: 10px 18px;
+  border-radius: 30px;
+  background: #fae9ef;
+  color: #b4778c;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: bold;
 }
 
 h2 {
-  color: #48516b;
-  margin: 20px 0;
-  font-size: 21px;
-  line-height: 1.6;
+  font-size: 23px;
+  line-height: 1.7;
+  margin: 28px 0;
 }
 
 .progress-track {
-  background: #f1e5e9;
+  width: 100%;
+  height: 10px;
+  background: #f3e6eb;
   border-radius: 20px;
-  height: 8px;
-  margin-top: 25px;
   overflow: hidden;
+  margin: 25px 0 12px;
 }
 
 #progressBar {
-  background: linear-gradient(90deg, #e9a9bb, #d6b56e);
+  width: 0;
   height: 100%;
-  transition: width .3s;
+  background: linear-gradient(90deg, #e8a5b8, #dfbd70);
+  transition: width 0.3s;
 }
 
 #progress {
   color: #b58b99;
+  font-size: 13px;
   text-align: right;
-  font-size: 12px;
 }
 
 #question {
-  color: #48516b;
-  margin: 30px 0 20px;
-  font-size: 18px;
+  margin: 28px 0 22px;
+  font-size: 21px;
   font-weight: bold;
-  line-height: 1.8;
+  line-height: 1.6;
+  color: #505a76;
 }
 
+#answers button,
 button {
-  color: #685263;
-  cursor: pointer;
-  background: #f9eaf0;
-  border: 1px solid #edcbd6;
-  border-radius: 16px;
-  width: 100%;
-  margin: 12px 0;
-  padding: 17px 12px;
-  font-size: 15px;
-  font-weight: bold;
   display: block;
-  box-shadow: 0 3px 8px #c99eac20;
+  width: 100%;
+  border: 0;
+  border-radius: 16px;
+  padding: 17px 16px;
+  margin: 12px 0;
+  background: #f8eaf0;
+  color: #505a76;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
-button:active {
-  transform: scale(.98);
-}
-
-.again {
-  color: #fff;
-  background: #505a76;
-  border-color: #505a76;
+#answers button:hover,
+button:hover {
+  background: #f1d8e2;
+  transform: translateY(-2px);
 }
 
 .hidden {
@@ -121,145 +125,148 @@ button:active {
 }
 
 .disclaimer {
-  color: #aaa1a7;
-  margin-top: 25px;
-  font-size: 10px;
-  line-height: 1.8;
-}
-
-.result-label {
-  color: #bd8196;
-  letter-spacing: 2px;
-  text-align: center;
-  margin-top: 30px;
-  font-size: 11px;
+  margin-top: 35px;
+  font-size: 12px;
+  color: #aaa0a5;
+  line-height: 1.7;
 }
 
 .eyebrow {
-  color: #92909b;
+  color: #a98b98;
   text-align: center;
 }
 
 .crown {
   text-align: center;
-  margin-top: 20px;
-  font-size: 38px;
+  font-size: 42px;
+  margin: 20px 0 5px;
 }
 
-#nickname {
-  color: #ba7890;
+h1 {
   text-align: center;
-  overflow-wrap: anywhere;
-  margin: 15px 0;
+  color: #b66f87;
   font-size: 29px;
   line-height: 1.5;
 }
 
 .rank {
-  color: #a96c82;
-  background: #fceaf0;
-  border-radius: 30px;
-  width: fit-content;
-  margin: 0 auto 20px;
-  padding: 9px 16px;
-  font-size: 12px;
-  display: block;
+  text-align: center;
+  color: #9b8290;
+  font-size: 14px;
+  margin: 15px 0;
 }
 
 .comment {
-  color: #5c5360;
-  background: #f8edf1;
-  border-left: 4px solid #d99caf;
+  background: #f9edf1;
   border-radius: 18px;
-  padding: 22px 18px;
-  font-size: 16px;
+  padding: 22px;
   line-height: 1.9;
+  text-align: center;
+  margin: 22px 0;
 }
 
 .scores {
-  background: #f5f0f3;
+  background: #fff;
+  border: 1px solid #f0dce3;
   border-radius: 18px;
-  margin: 25px 0;
   padding: 20px;
+  margin: 24px 0;
 }
 
 .score-title {
-  color: #505a76;
-  margin-bottom: 16px;
-  font-size: 14px;
   font-weight: bold;
+  margin-bottom: 18px;
 }
 
 .score-row {
   margin: 15px 0;
-  font-size: 12px;
 }
 
 .score-head {
-  justify-content: space-between;
-  margin-bottom: 7px;
   display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-bottom: 7px;
 }
 
 .bar {
-  background: #e7dce2;
-  border-radius: 20px;
-  height: 8px;
+  height: 9px;
+  background: #f2e8ec;
+  border-radius: 10px;
   overflow: hidden;
 }
 
 .bar-fill {
-  background: linear-gradient(90deg, #e8aabd, #d5b16b);
-  border-radius: 20px;
   height: 100%;
+  background: linear-gradient(90deg, #e6a2b5, #d9bd7c);
 }
 
 .share-card {
-  text-align: center;
-  background: linear-gradient(145deg, #fff0f4, #f5edf2);
-  border: 2px solid #e7c3ce;
-  border-radius: 22px;
+  padding: 28px 18px;
   margin: 25px 0;
-  padding: 25px 16px;
+  border-radius: 20px;
+  border: 2px solid #e8c2ce;
+  background: linear-gradient(145deg, #fff1f5, #f5edf2);
+  text-align: center;
 }
 
 .share-brand {
-  color: #505a76;
-  font-size: 15px;
   font-weight: bold;
+  font-size: 18px;
 }
 
 .share-small {
+  margin: 20px 0;
   color: #b58b99;
+  font-size: 11px;
   letter-spacing: 2px;
-  margin-top: 25px;
-  font-size: 10px;
 }
 
 .share-name {
   color: #b66f87;
-  overflow-wrap: anywhere;
-  margin: 20px 0;
-  font-size: 27px;
-  font-weight: 900;
+  font-size: 25px;
+  font-weight: bold;
   line-height: 1.5;
 }
 
 .share-comment {
-  color: #5c5360;
+  margin: 20px 0;
+  line-height: 1.8;
   font-size: 14px;
-  line-height: 1.9;
 }
 
 .share-footer {
   color: #a78c99;
-  margin-top: 25px;
-  font-size: 10px;
+  font-size: 12px;
+}
+
+button {
+  background: #eebdcb;
+  color: #505a76;
+}
+
+button.again {
+  background: #505a76;
+  color: white;
 }
 
 footer {
+  margin-top: 35px;
   text-align: center;
-  color: #b9a6af;
-  margin: 25px 0 5px;
-  font-size: 10px;
+  color: #b7a4ad;
+  font-size: 12px;
+}
+
+@media (max-width: 400px) {
+  .app {
+    padding: 25px 18px;
+  }
+
+  .logo {
+    font-size: 23px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
 }
