@@ -1,4 +1,4 @@
-const APP_URL = "https://47ayan47-netizen.github.io/kabukura-nickname/";
+const APP_URL = "https://kabukura-lab.github.io/kabukura-nickname/";
 
 const dimensions = ["握力","損切り力","高値掴み度","ナンピン度","SNS依存度"];
 
