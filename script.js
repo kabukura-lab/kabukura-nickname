@@ -230,14 +230,13 @@ function downloadCard() {
 
 
 
-function shareX() {
-  const appUrl = "https://kabukura-lab.github.io/kabukura-nickname/";
 
+function shareX() {
   const text =
-    `私の株クラあだ名は「${resultName}」でした🤡\n\n` +
+    `私の株クラあだ名は「${resultName}」でした🤣\n\n` +
     `${resultComment}\n\n` +
     `あなたは何て呼ばれる？診断してみて👇\n` +
-    `${appUrl}\n\n` +
+    `${APP_URL}\n\n` +
     `#株クラあだ名工場 #株クラ`;
 
   const shareUrl =
