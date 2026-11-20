@@ -1,4 +1,4 @@
-const APP_URL = "https://codepen.io/editor/qkynfdok-the-typescripter/pen/01a1f6ae-0b8b-79f2-8164-429bc01414b4?orientation=top&panel=false&show=preview";
+const APP_URL = "https://47ayan47-netizen.github.io/kabukura-nickname/";
 
 const dimensions = ["握力","損切り力","高値掴み度","ナンピン度","SNS依存度"];
 
