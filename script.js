@@ -228,26 +228,20 @@ function downloadCard() {
   link.click();
 }
 
-function wrapText(ctx,text,x,y,maxWidth,lineHeight) {
-  let line = "";
-  let currentY = y;
-  for(const char of text) {
-    const test = line + char;
-    if(ctx.measureText(test).width > maxWidth && line) {
-      ctx.fillText(line,x,currentY);
-      line = char;
-      currentY += lineHeight;
-    } else {
-      line = test;
-    }
-  }
-  if(line) ctx.fillText(line,x,currentY);
-}
 
-function restart() {
-  current = 0;
-  answers = [];
-  showQuestion();
+function shareX() {
+  const text =
+    `私の株クラあだ名は「${resultName}」でした🤣\n\n` +
+    `${resultComment}\n\n` +
+    `あなたは何て呼ばれる？診断してみて👇\n` +
+    `${APP_URL}\n\n` +
+    `#株クラあだ名工場 #株クラ`;
+
+  const shareUrl =
+    "https://twitter.com/intent/tweet?text=" +
+    encodeURIComponent(text);
+
+  window.open(shareUrl, "_blank");
 }
 
 showQuestion();
